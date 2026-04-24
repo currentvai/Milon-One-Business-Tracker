@@ -1,0 +1,11 @@
+{
+  "projectId": "businesstracker-6c25a",
+  "appId": "1:303495428682:web:dd5d505500f1132b2944b3",
+  "apiKey": "AIzaSyAEZWHSEHQgflFZIer9xlhS8ttA3A9Jso0",
+  "authDomain": "businesstracker-6c25a.firebaseapp.com",
+  "firestoreDatabaseId": "(default)",
+  "storageBucket": "businesstracker-6c25a.firebasestorage.app",
+  "messagingSenderId": "303495428682",
+  "measurementId": "G-ZN42MYEJJL",
+  "databaseURL": "https://businesstracker-6c25a-default-rtdb.asia-southeast1.firebasedatabase.app/"
+}
