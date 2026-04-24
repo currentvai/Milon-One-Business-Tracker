@@ -1,0 +1,3 @@
+com.milononebusinesstracker.app.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme
