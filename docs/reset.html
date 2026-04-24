@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reset Password</title>
+</head>
+<body style="background:black;color:white;text-align:center;padding-top:50px;">
+
+<h2>🔐 Reset Password</h2>
+
+<input type="password" id="newPassword" placeholder="New Password">
+<br><br>
+<button onclick="reset()">Reset</button>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const oobCode = params.get('oobCode');
+
+function reset() {
+  const password = document.getElementById('newPassword').value;
+
+  import("https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js")
+    .then(({ getAuth, confirmPasswordReset }) => {
+      const auth = getAuth();
+      confirmPasswordReset(auth, oobCode, password)
+        .then(() => alert("Password Reset Done ✅"))
+        .catch(err => alert(err.message));
+    });
+}
+</script>
+
+</body>
+</html>
