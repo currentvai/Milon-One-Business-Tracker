@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milon One - Business Tracker & Management Suite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #00b894;
+            --primary-dark: #00947a;
+            --dark-bg: #0a0e1a;
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --card-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header & Nav */
+        header {
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 800;
+            font-size: 1.4rem;
+        }
+
+        .logo-box {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-light);
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 80px 5%;
+            gap: 50px;
+            background: linear-gradient(135deg, #fff 0%, #f0fdf4 100%);
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            color: #0f172a;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 35px;
+            max-width: 600px;
+        }
+
+        .btn-download {
+            background: var(--primary);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+            box-shadow: 0 10px 20px rgba(0, 184, 148, 0.2);
+        }
+
+        .btn-download:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 184, 148, 0.3);
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .phone-mockup {
+            width: 300px;
+            height: 600px;
+            background: var(--dark-bg);
+            border: 8px solid #334155;
+            border-radius: 40px;
+            overflow: hidden;
+            box-shadow: 0 50px 100px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            background: #0a0e1a; /* Dark theme mockup */
+            padding: 20px;
+            color: white;
+        }
+
+        /* Feature Cards */
+        .features {
+            padding: 100px 5%;
+            text-align: center;
+        }
+
+        .section-title {
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: var(--card-shadow);
+            transition: 0.3s;
+            text-align: left;
+            border: 1px solid rgba(0,0,0,0.02);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+        }
+
+        .ic-1 { background: #fee2e2; color: #ef4444; }
+        .ic-2 { background: #dcfce7; color: #22c55e; }
+        .ic-3 { background: #dbeafe; color: #3b82f6; }
+
+        /* Dashboard Preview Styling (Mimicking your screenshots) */
+        .preview-card {
+            background: white;
+            border-radius: 20px;
+            padding: 15px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: inline-block;
+            width: 140px;
+            text-align: left;
+        }
+        
+        .preview-label { font-size: 10px; font-weight: 800; color: #ef4444; text-transform: uppercase; }
+        .preview-value { font-size: 24px; font-weight: 900; margin: 5px 0; }
+
+        /* Footer */
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 60px 5% 30px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .footer-links {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+        }
+
+        .copyright {
+            border-top: 1px solid #1e293b;
+            padding-top: 30px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero { flex-direction: column; text-align: center; }
+            .hero-content h1 { font-size: 2.5rem; }
+            .hero-content p { margin: 0 auto 30px; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">
+            <div class="logo-box">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            Milon One
+        </a>
+        <nav class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#analytics">Analytics</a>
+            <a href="#support">Support</a>
+        </nav>
+        <a href="#" class="btn-download" style="padding: 10px 20px; font-size: 0.9rem;">Get APK</a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>All-in-One Business <br><span style="color: var(--primary);">Tracker Suite.</span></h1>
+            <p>Track your sales, manage inventory, and calculate net profits with the most intuitive business management tool designed for the Taka (৳) currency ecosystem.</p>
+            <div class="hero-btns">
+                <a href="#" class="btn-download">
+                    <i class="fab fa-android"></i>
+                    Download V1.5 APK
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="phone-mockup">
+                <div class="phone-screen">
+                    <div style="font-size: 12px; font-weight: bold; margin-bottom: 20px;">Milon One <br><span style="opacity: 0.5;">V1.5</span></div>
+                    
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <div class="preview-card" style="background: #1e293b;">
+                            <div class="preview-label" style="color: #ff7675;">SALES TODAY</div>
+                            <div class="preview-value">৳0</div>
+                        </div>
+                        <div class="preview-card" style="background: #1e293b;">
+                            <div class="preview-label" style="color: #55efc4;">NET PROFIT</div>
+                            <div class="preview-value">৳0</div>
+                        </div>
+                        <div class="preview-card" style="background: #1e293b; width: 100%;">
+                            <div class="preview-label" style="color: #74b9ff;">TOTAL STOCK</div>
+                            <div class="preview-value">৳0</div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 20px; background: #00b894; padding: 20px; border-radius: 20px; text-align: center;">
+                        <i class="fas fa-sync-alt" style="font-size: 24px;"></i>
+                        <div style="margin-top: 10px; font-weight: bold;">All Transactions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="section-title">
+            <h2>Why Milon One?</h2>
+            <p>Powerful tools to help your small business grow faster.</p>
+        </div>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon-box ic-1">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Real-time Tracking</h3>
+                <p>Instant updates on your daily sales and net profit. No more manual calculations at the end of the day.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box ic-2">
+                    <i class="fas fa-boxes"></i>
+                </div>
+                <h3>Inventory Alerts</h3>
+                <p>Get notified when your stock is low. Never run out of your best-selling items again.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box ic-3">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <h3>Visual Analytics</h3>
+                <p>Deep insights into your business performance with clean, easy-to-read charts and reports.</p>
+            </div>
+        </div>
+    </section>
+    <section class="analytics" id="analytics">
+    <section style="padding: 100px 5%; background: #f1f5f9; display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+            <img src="https://img.freepik.com/free-vector/data-report-concept-illustration_114360-883.jpg" alt="Analytics" style="width: 100%; border-radius: 30px;">
+        </div>
+        <div style="flex: 1; min-width: 300px;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Native Taka Support</h2>
+            <p style="font-size: 1.1rem; color: var(--text-light); margin-bottom: 30px;">Built specifically for local businesses. Every report, every transaction, and every insight is calculated in Taka (৳) with high precision.</p>
+            <ul style="list-style: none;">
+                <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-check-circle" style="color: var(--primary);"></i> Daily Profit & Loss Statements
+                </li>
+                <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-check-circle" style="color: var(--primary);"></i> Digital Receipt Generation
+                </li>
+                <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-check-circle" style="color: var(--primary);"></i> Multi-user Management
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+    <section class="support" id="support">
+        <span class="footer-logo">Milon One</span>
+        <p>Simplified Business Management for Modern Entrepreneurs.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Developer</a>
+            <a href="#">Help Center</a>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Milon One Management Suite. All rights reserved. <br>
+            Handcrafted by <span style="color: white;">currentvai</span>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "Milon One Business Tracker",
+  "description": "A professional fintech-style business tracker with Gemini AI Assistant for smart inventory and profit insights, including barcode scanning and secure cloud storage.",
+  "requestFramePermissions": ["camera"]
+}
