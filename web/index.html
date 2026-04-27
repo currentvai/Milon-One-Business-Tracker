@@ -67,6 +67,7 @@
         .nav-links {
             display: flex;
             gap: 30px;
+            align-items: center;
         }
 
         .nav-links a {
@@ -107,6 +108,12 @@
             max-width: 600px;
         }
 
+        .hero-btns {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
         .btn-download {
             background: var(--primary);
             color: white;
@@ -124,6 +131,18 @@
         .btn-download:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 30px rgba(0, 184, 148, 0.3);
+        }
+
+        .btn-web {
+            background: white;
+            color: var(--text-dark);
+            border: 2px solid #e2e8f0;
+            box-shadow: none;
+        }
+
+        .btn-web:hover {
+            background: #f8fafc;
+            border-color: var(--primary);
         }
 
         .hero-image {
@@ -147,7 +166,7 @@
         .phone-screen {
             width: 100%;
             height: 100%;
-            background: #0a0e1a; /* Dark theme mockup */
+            background: #0a0e1a;
             padding: 20px;
             color: white;
         }
@@ -202,7 +221,6 @@
         .ic-2 { background: #dcfce7; color: #22c55e; }
         .ic-3 { background: #dbeafe; color: #3b82f6; }
 
-        /* Dashboard Preview Styling (Mimicking your screenshots) */
         .preview-card {
             background: white;
             border-radius: 20px;
@@ -238,6 +256,7 @@
             display: flex;
             justify-content: center;
             gap: 40px;
+            flex-wrap: wrap;
         }
 
         .footer-links a {
@@ -256,6 +275,7 @@
             .hero { flex-direction: column; text-align: center; }
             .hero-content h1 { font-size: 2.5rem; }
             .hero-content p { margin: 0 auto 30px; }
+            .hero-btns { justify-content: center; }
             .nav-links { display: none; }
         }
     </style>
@@ -272,9 +292,11 @@
         <nav class="nav-links">
             <a href="#features">Features</a>
             <a href="#analytics">Analytics</a>
+            <a href="#" style="color: var(--primary); font-weight: 700;">Web Version</a>
             <a href="#support">Support</a>
         </nav>
         <a href="#" class="btn-download" style="padding: 10px 20px; font-size: 0.9rem;">Get APK</a>
+        <a href="#" class="btn-download" style="padding: 10px 20px; font-size: 0.9rem;">Web App</a>
     </header>
 
     <section class="hero">
@@ -285,6 +307,10 @@
                 <a href="#" class="btn-download">
                     <i class="fab fa-android"></i>
                     Download V1.5 APK
+                </a>
+                <a href="#" class="btn-download btn-web">
+                    <i class="fas fa-globe"></i>
+                    Open Web App
                 </a>
             </div>
         </div>
@@ -346,8 +372,8 @@
             </div>
         </div>
     </section>
-    <section class="analytics" id="analytics">
-    <section style="padding: 100px 5%; background: #f1f5f9; display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
+
+    <section class="analytics" id="analytics" style="padding: 100px 5%; background: #f1f5f9; display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
         <div style="flex: 1; min-width: 300px;">
             <img src="https://img.freepik.com/free-vector/data-report-concept-illustration_114360-883.jpg" alt="Analytics" style="width: 100%; border-radius: 30px;">
         </div>
@@ -368,8 +394,7 @@
         </div>
     </section>
 
-    <footer>
-    <section class="support" id="support">
+    <footer id="support">
         <span class="footer-logo">Milon One</span>
         <p>Simplified Business Management for Modern Entrepreneurs.</p>
         <div class="footer-links">
@@ -377,6 +402,7 @@
             <a href="#">Terms of Service</a>
             <a href="#">Developer</a>
             <a href="#">Help Center</a>
+            <a href="#" style="color: var(--primary);">Web Version</a>
         </div>
         <div class="copyright">
             &copy; 2026 Milon One Management Suite. All rights reserved. <br>
