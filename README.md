@@ -46,6 +46,36 @@ Distributed under the **MIT License**.
 *   **GitHub**: [github.com/currentvai](https://github.com/currentvai)
 *   **Telegram**: [t.me/currentvai](https://t.me/currentvai)
 *   **Facebook**: [cv.hasan.3](https://facebook.com/cv.hasan.3)
+---
+
+## 📊 Repository Insights
+
+<details>
+<summary>👥 Users (Stargazers)</summary>
+
+👉 https://github.com/currentvai/Milon-One-Business-Tracker/stargazers
+
+![Stars](https://img.shields.io/github/stars/currentvai/Milon-One-Business-Tracker?style=for-the-badge)
+
+</details>
+
+<details>
+<summary>👀 Watchers</summary>
+
+👉 https://github.com/currentvai/Milon-One-Business-Tracker/watchers
+
+![Watchers](https://img.shields.io/github/watchers/currentvai/Milon-One-Business-Tracker?style=for-the-badge)
+
+</details>
+
+<details>
+<summary>🍴 Forks</summary>
+
+👉 https://github.com/currentvai/Milon-One-Business-Tracker/network/members
+
+![Forks](https://img.shields.io/github/forks/currentvai/Milon-One-Business-Tracker?style=for-the-badge)
+
+</details>
 
 ---
 *Created with ❤️ by Dipo Office*
