@@ -50,32 +50,51 @@ Distributed under the **MIT License**.
 
 ## 📊 Repository Insights
 
+<table>
+<tr>
+<td width="33%">
+
 <details>
-<summary>👥 Users (Stargazers)</summary>
+<summary><b>👥 Users (Stargazers)</b></summary>
+<br>
 
-👉 https://github.com/currentvai/Milon-One-Business-Tracker/stargazers
-
-![Stars](https://img.shields.io/github/stars/currentvai/Milon-One-Business-Tracker?style=for-the-badge)
+<a href="https://github.com/currentvai/Milon-One-Business-Tracker/stargazers">
+<img src="https://img.shields.io/github/stars/currentvai/Milon-One-Business-Tracker?style=for-the-badge" />
+</a>
 
 </details>
 
+</td>
+
+<td width="33%">
+
 <details>
-<summary>👀 Watchers</summary>
+<summary><b>👀 Watchers</b></summary>
+<br>
 
-👉 https://github.com/currentvai/Milon-One-Business-Tracker/watchers
-
-![Watchers](https://img.shields.io/github/watchers/currentvai/Milon-One-Business-Tracker?style=for-the-badge)
+<a href="https://github.com/currentvai/Milon-One-Business-Tracker/watchers">
+<img src="https://img.shields.io/github/watchers/currentvai/Milon-One-Business-Tracker?style=for-the-badge" />
+</a>
 
 </details>
 
+</td>
+
+<td width="33%">
+
 <details>
-<summary>🍴 Forks</summary>
+<summary><b>🍴 Forks</b></summary>
+<br>
 
-👉 https://github.com/currentvai/Milon-One-Business-Tracker/network/members
-
-![Forks](https://img.shields.io/github/forks/currentvai/Milon-One-Business-Tracker?style=for-the-badge)
+<a href="https://github.com/currentvai/Milon-One-Business-Tracker/network/members">
+<img src="https://img.shields.io/github/forks/currentvai/Milon-One-Business-Tracker?style=for-the-badge" />
+</a>
 
 </details>
+
+</td>
+</tr>
+</table>
 
 ---
 *Created with ❤️ by Dipo Office*
