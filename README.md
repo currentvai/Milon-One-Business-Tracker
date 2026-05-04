@@ -1,7 +1,9 @@
-# 🚀 Milon One Business Tracker
+# 🚀 Milon One Business Tracker  
 **Smart POS & Business Management Ecosystem**
 
-![Project Interface](image_4c9594.png)
+<p align="center">
+  <img src="banner.png" alt="Milon One Banner" width="100%" />
+</p>
 
 ## 📋 Overview
 **Milon One Business Tracker** is a robust business automation solution designed to help Small and Medium Enterprises (SMEs) manage inventory, sales, and accounts. The project utilizes a modern tech stack to ensure real-time data tracking and operational efficiency.
