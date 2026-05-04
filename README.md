@@ -22,27 +22,42 @@
 ## 🚀 Installation & Usage
 
 ### 📱 Android Users
-For the best mobile experience, you can download and install our pre-built APK:
-1.  Download the
-2.  <p align="center">
+For the best mobile experience, download and install the APK:
+
+<p align="center">
   <a href="https://github.com/currentvai/Milon-One-Business-Tracker/releases">
     <img src="https://img.shields.io/badge/📥 Download%20APK-green?style=for-the-badge&logo=android&logoColor=white" />
   </a>
-3.  Enable "Install from Unknown Sources" in your device settings.
-4.  Install the app and log in to start tracking.
+</p>
+
+**Steps:**
+1. Download the APK from the button above  
+2. Enable **Install from Unknown Sources** in your device settings  
+3. Install the app  
+4. Log in and start tracking your business  
+
+---
 
 ### 🌐 Web Application
-To use the application directly from your browser without any installation:
+Use the app directly from your browser—no installation needed:
+
+<p align="center">
   <a href="https://currentvai.github.io/Milon-One-Business-Tracker/app/" target="_blank">
-    <img src="https://img.shields.io/badge/🌐 Web%20Dashboard-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white" />
+    <img src="https://img.shields.io/badge/🌐 Open%20Web%20Dashboard-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white" />
   </a>
 </p>
-*   The web platform is fully responsive and accessible from any modern browser.
+
+✔ Fully responsive  
+✔ Works on all modern browsers  
+✔ No installation required  
+
+---
 
 ## 📂 Directory Structure
-*   `app/`: Native Android application resources and logic.
-*   `auth/`: Authentication modules for Firebase and Supabase.
-*   `web/`: Web dashboard and business analytics interface.
+
+- `app/` → Native Android application resources and logic  
+- `auth/` → Authentication modules (Firebase & Supabase)  
+- `web/` → Web dashboard & business analytics interface  
 
 ## 🛡️ License
 Distributed under the **MIT License**.
