@@ -23,7 +23,11 @@
 
 ### 📱 Android Users
 For the best mobile experience, you can download and install our pre-built APK:
-1.  Download the **[Latest APK Here]** https://github.com/currentvai/Milon-One-Business-Tracker/releases.
+1.  Download the <p align="center">
+  <a href="https://github.com/currentvai/Milon-One-Business-Tracker/releases">
+    <img src="https://img.shields.io/badge/Download-Latest%20APK-blue?style=for-the-badge&logo=android" />
+  </a>
+</p>
 2.  Enable "Install from Unknown Sources" in your device settings.
 3.  Install the app and log in to start tracking.
 
