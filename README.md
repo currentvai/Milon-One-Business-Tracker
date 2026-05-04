@@ -23,17 +23,20 @@
 
 ### 📱 Android Users
 For the best mobile experience, you can download and install our pre-built APK:
-1.  Download the <p align="center">
+1.  Download the
+2.  <p align="center">
   <a href="https://github.com/currentvai/Milon-One-Business-Tracker/releases">
-    <img src="https://img.shields.io/badge/Download-Latest%20APK-blue?style=for-the-badge&logo=android" />
+    <img src="https://img.shields.io/badge/📥 Download%20APK-green?style=for-the-badge&logo=android&logoColor=white" />
   </a>
-</p>
-2.  Enable "Install from Unknown Sources" in your device settings.
-3.  Install the app and log in to start tracking.
+3.  Enable "Install from Unknown Sources" in your device settings.
+4.  Install the app and log in to start tracking.
 
 ### 🌐 Web Application
 To use the application directly from your browser without any installation:
-*   Visit the **[Milon One Web Dashboard]** (Add your landing page link).
+  <a href="https://currentvai.github.io/Milon-One-Business-Tracker/app/" target="_blank">
+    <img src="https://img.shields.io/badge/🌐 Web%20Dashboard-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white" />
+  </a>
+</p>
 *   The web platform is fully responsive and accessible from any modern browser.
 
 ## 📂 Directory Structure
